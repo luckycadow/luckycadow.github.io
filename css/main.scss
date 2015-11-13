@@ -1,0 +1,99 @@
+---
+---
+
+@import 'normalize';
+@import 'skeleton';
+
+$blue: #0f80cc;
+
+html, body {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  height: 100%;
+}
+
+div.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+div.top {
+  background-color: $blue;
+  padding: 140px 5px 155px 5px;
+  margin-bottom: -34px;
+
+  h1 {
+      margin-bottom: 10px;
+      font-size: 58px;
+  }
+
+  .tagline {
+    font-size: 26px;
+  }
+
+  .github {
+    color: white;
+    border-color: white;
+    font-size: 20px;
+    padding: 8px 30px;
+    height: inherit;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  .github:hover {
+    color: $blue;
+    background-color: white;
+    transition: 250ms;
+  }
+}
+
+div.bottom {
+  margin-bottom: 55px;
+
+  a {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    color: $blue;
+    padding: 8px;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    font-size: 38px;
+  }
+
+  i {
+      margin-top: 10px;
+
+      &.this-goddamn-plane {
+        display: block;
+        font-size: 50px;
+        margin-top: -10px;
+        margin-left: -4px;
+      }
+  }
+
+  a:hover {
+    background-color: $blue;
+    color: white;
+    transition: 250ms;
+  }
+}
+
+footer {
+  color: $blue;
+  font-size: 11px;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.notfound {
+  color: $blue;
+  padding: 30px;
+}
