@@ -7,26 +7,24 @@
 $blue: #0f80cc;
 
 html, body {
-  color: white;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
-  text-align: center;
-  height: 100%;
-}
-
-div.wrapper {
-  position: relative;
   min-height: 100%;
 }
 
-div.top {
+section.splash {
+  color: white;
   background-color: $blue;
-  padding: 140px 5px 155px 5px;
-  margin-bottom: -34px;
+  text-align: center;
+  padding: 80px 5px 75px 5px;
+
+  @media (min-width: 520px) {
+    padding: 140px 5px 155px 5px;
+  }
 
   h1 {
-      margin-bottom: 10px;
-      font-size: 58px;
+    margin-bottom: 10px;
+    font-size: 58px;
   }
 
   .tagline {
@@ -48,53 +46,57 @@ div.top {
     background-color: white;
     transition: 250ms;
   }
+
 }
 
-div.bottom {
-  margin-bottom: 55px;
+section.social {
+  text-align: center;
 
-  a {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    background-color: white;
-    color: $blue;
-    padding: 8px;
-    width: 60px;
-    height: 60px;
-    border-radius: 40px;
-    font-size: 38px;
-  }
+  div.icons {
+    margin-bottom: 75px;
+    margin-top: 25px;
 
-  i {
+    a {
+      display: inline-block;
+      margin: 18px;
+      position: relative;
+      background-color: white;
+      color: $blue;
+      padding: 8px;
+      width: 60px;
+      height: 60px;
+      border-radius: 40px;
+      font-size: 38px;
+      border: 1px solid $blue;
+    }
+
+    i {
       margin-top: 10px;
+    }
 
-      &.this-goddamn-plane {
-        display: block;
-        font-size: 50px;
-        margin-top: -10px;
-        margin-left: -4px;
+    a:hover {
+      background-color: $blue;
+      color: white;
+      transition: 250ms;
+    }
+
+    @media (min-width: 520px) {
+      margin-top: -54px;
+
+      a {
+        border: none;
       }
-  }
+    }
 
-  a:hover {
-    background-color: $blue;
-    color: white;
-    transition: 250ms;
   }
 }
 
 footer {
   color: $blue;
   font-size: 11px;
+  text-align: center;
   height: 15px;
-  position: absolute;
   bottom: 0;
   padding-bottom: 5px;
   width: 100%;
-}
-
-.notfound {
-  color: $blue;
-  padding: 30px;
 }
